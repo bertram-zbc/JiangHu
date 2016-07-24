@@ -29,11 +29,11 @@ public class Driver {
             System.out.println("**Normalize For LPA: input pathha:count,output path:forLPA");
             NormalizeForLPA.run("output/count","output/forLPA");
             System.out.println("**LPA: input path:forLPA,output path LPAout,Times:5");
-            LPA.run(5,"output/forLPA","output/LPAout");
+            LPA.run(10,"output/forLPA","output/LPAout");
             System.out.println("**Normalize For PageRank: input path:count,output path:forPR");
             NormalizeForPageRank.run("output/count","output/forPR");
             System.out.println("**PageRank: input path:forPR,output path:PRout,Times:5");
-            PageRank.run(5,"output/forPR","output/PRout");
+            PageRank.run(10,"output/forPR","output/PRout");
             System.out.println("**All missions done");
         }
         if(args.length==3&&!args[0].equals("default")){
